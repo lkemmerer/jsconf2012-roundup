@@ -1,0 +1,70 @@
+TODO:
+Reveal.js
+Carousel.js
+
+Themes
+  Progressive Enhancement
+    HTML 5 is cool, but can't be used everywhere
+    Mobile Web is growing, make things better for those users
+
+  Neat Stuff
+
+  Fun Stuff
+
+  Useful(?) Stuff
+
+
+Talks
+Remy Sharp: Build Anything (in HTML 5)
+  http://speakerdeck.com/u/rem/p/build-anything
+
+  Interesting Stuff:
+    - <!DOCTYPE html>
+    - native JSON parsing
+    - Web storage
+    - History API
+    - Appcache
+    - EventSource (http://jsconsole.com/) - polyfillable
+    - Drag and Drop files - attach it to a dom element, add some event listeners...tada
+
+
+Jake Archibald: Appcache
+  http://speakerdeck.com/u/jaffathecake/p/application-cache-douchebag
+  http://dl.dropbox.com/u/2501978/appcache-diagram.svg
+
+  Interesting Stuff:
+    - Works for later versions of Chrome, FF, Opera, and IE(10), IOS, Android
+    - Offline access
+    - Do stuff sites vs. Get stuff sites
+
+    - To add: <html manifest="offline.appcache"
+              add files you want cached to the manifest
+              serve manifest with CONTENT-TYPE:cache-manifest
+    - Lots of caveats
+      once you specify, the only way you'll get changes is if you update the manifest (versions, comments, etc.)
+      4xx/5xx/redirects to another domain? no caching at all
+      cache validation woes
+      dealing with stale content (which is why you see "New version of Google xxx now available.  Reload?")
+      doesn't like stuff that's not appcached (add NETWORK section to appcache for everything else)
+
+    - offlining get stuff sites needs to be opt-in; more caveats
+      show online content when available
+      indicate which content is available offline, let user decide, one page with all offline views (with iframe...:()
+      use localstorage for optional offline
+
+
+Lively Kernel
+
+A Day in the Life of V8
+
+Paul Irish: JS Tooling
+  http://dl.dropbox.com/u/39519/talks/jsconf-tools/index.html
+
+  Esprima (http://esprima.org/)
+    - Parser - http://esprima.org/demo/parse.html
+    - Regexp collector - http://esprima.org/demo/collector.html
+    - Code coverage (for node)
+  Js-tools
+
+
+@brixen
