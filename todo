@@ -53,12 +53,17 @@ Jake Archibald: Appcache
       use localstorage for optional offline
 
 
-Lively Kernel
+Dan Ingalls: Lively Kernel
+  - Quote ( Ted Leung, http://www.sauria.com/blog/2012/04/07/jsconf-2012/):
+    The Lively Kernel is the answer to the question “what if we tried to build Squeak Smalltalk in Javascript”
 
 A Day in the Life of V8
 
 Paul Irish: JS Tooling
   http://dl.dropbox.com/u/39519/talks/jsconf-tools/index.html
+
+  - Quote (Paul Irish):
+    No developer wants to be spinning their wheels, or operating on mundane tasks when thy could instead be creating rich and compelling experiences.  Smart developers work with smart tools, effective workflows, and wise strategies for development.
 
   Esprima (http://esprima.org/)
     - Parser - http://esprima.org/demo/parse.html
