@@ -1,18 +1,4 @@
 TODO:
-Reveal.js
-Carousel.js
-
-Themes
-  Progressive Enhancement
-    HTML 5 is cool, but can't be used everywhere
-    Mobile Web is growing, make things better for those users
-
-  Neat Stuff
-
-  Fun Stuff
-
-  Useful(?) Stuff
-
 
 Talks
 Remy Sharp: Build Anything (in HTML 5)
@@ -57,7 +43,11 @@ Dan Ingalls: Lively Kernel
   - Quote ( Ted Leung, http://www.sauria.com/blog/2012/04/07/jsconf-2012/):
     The Lively Kernel is the answer to the question “what if we tried to build Squeak Smalltalk in Javascript”
 
-A Day in the Life of V8
+Thomas A. Valletta: The Web Game Console
+  - Used Box2D web
+  - Not supported by IE6
+  - TODO: review notes and slides
+
 
 Paul Irish: JS Tooling
   http://dl.dropbox.com/u/39519/talks/jsconf-tools/index.html
@@ -69,7 +59,6 @@ Paul Irish: JS Tooling
     - Parser - http://esprima.org/demo/parse.html
     - Regexp collector - http://esprima.org/demo/collector.html
     - Code coverage (for node)
-  Js-tools
-
-
-@brixen
+  Jstools
+    - python based
+    - includes tools to merge and compress all your js by traversing directory tree and finding other source needed by that source

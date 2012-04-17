@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>JSConf 2012 Roundup</title>
+    <meta name="description" content="A brief overview of some of the cool stuff I learned at JSConf, brought to you via some flashy JS/CSS3 in order to detract from my inability to give presentations">
+    <meta name="author" content="Laurie Kemmerer">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="vendor/reveal.js/css/reset.css">
+    <link rel="stylesheet" href="vendor/reveal.js/css/main.css">
+    <link rel="stylesheet" href="css/extras.css">
+    <link rel="stylesheet" href="vendor/reveal.js/lib/zenburn.css">
+  </head>
+  <body>
+    <div id="reveal">
+      <div class="state-background"></div>
+
+      <div class="slides">
+        <section>
+          <h1 class="rotated">{</h1>
+          <h1>JSConf</h1>
+          <h1>2012</h1>
+          <h3 class="inverse">A Roundup of the Neat, the Useful, and the Fun</h3>
+        </section>
+        <section>
+          <h2>The Neat: The JS community</h2>
+          <section>
+          <img src="assets/js-logo.png"/>
+          </section>
+          <section>
+            <h3>Disassembling Javascript in V8</h3>
+              <small>When the video for this comes out, we should watch it.  I cannot do this talk justice.
+              <a href="http://s3.mrale.ph/jsconf2012.pdf">but the slides are here</a></small>
+            <h4>also: <a href="http://www.slideshare.net/jarrednicholls/javascript-on-the-gpu">Javascript on the GPU</a></h4>
+          </section>
+        </section>
+        <section>
+          <h2>The Useful: Progressive Enhancment</h2>
+          <section>
+          <ul>
+            <li class="fragment">HTML 5 is cool, but it can't be used everywhere</li>
+            <li class="fragment">Mobile Web is growing, so let's make the experience better for those users</li>
+            <li class="fragment">Information gathered from:<br/>
+              <small>
+                <a href="http://speakerdeck.com/u/rem/p/build-anything">Remy Sharp's Build Anything (in HTML 5)</a><br/>
+                <a href="http://speakerdeck.com/u/jaffathecake/p/application-cache-douchebag">Jake Archibald's Appcache:Douchebag</a>
+              </small>
+            </li>
+          </ul>
+          </section>
+          <section>
+            <h3>HTML 5 Goodies</h3>
+            <ul>
+              <li>Native JSON parsing</li>
+              <li>EventSource: kind of like WebSockets, but over HTTP and server-to-browser only<br/>
+              <small>see <a href="http://jsconsole.com">jsconsole</a> for example (and a neat remote debugging tool)</small><br/>
+                <small>it's pollyfillable</small>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>HTML 5 Goodies: Drag and Drop File Upload</h3>
+          </section>
+          <section>
+            <h3>HTML 5 Goodies: The Appcache</h3>
+          </section>
+          <section>
+            <h3>HTML 5 Goodies: The Appcache and Local Storage</h3>
+          </section>
+        </section>
+        <section>
+          <h2>The Fun: Lively Kernel</h2>
+        </section>
+        <section>
+          <h2>Things I Wanted to See, But Didn't</h2>
+          <br/>
+          <h3>Yes, of course we need a billion more MVC frameworks.</h3>
+          <h3>So tell me more about testing...</h3>
+          <br/>
+          <h4>also, Paul Irish's <a href="http://dl.dropbox.com/u/39519/talks/jsconf-tools/index.html">talk on JS tooling</a>... :(</h4>
+        </section>
+      </div>
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
+        <!-- Displays presentation pushedrogress, max value changes via JS to reflect # of slides -->
+      <div class="progress"><span></span></div>
+    </div>
+    <script src="vendor/reveal.js/js/reveal.js"></script>
+    <script src="vendor/reveal.js/lib/highlight.js"></script>
+    <script src="vendor/reveal.js/lib/classList.js"></script>
+    <script>
+      // Parse the query string into a key/value object
+      var query = {};
+      location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+        query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+      } );
+
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // If true; each slide will be pushed to the browser        history
+        history: true,
+        // Flags if mouse wheel navigation should be enabled
+        mouseWheel: true,
+        // Apply a 3D roll to links on hover
+        rollingLinks: true,
+        // UI style
+        theme: query.theme || 'default', // default/neon
+        // Transition style
+        transition: query.transition || 'concave' // default/cube/page/concave/linear(2d)
+      });
+
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
