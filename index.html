@@ -36,7 +36,7 @@
           </section>
         </section>
         <section>
-          <h2>The Useful: Progressive Enhancment</h2>
+          <h2>The Useful: Progressive Enhancement</h2>
           <section>
           <ul>
             <li class="fragment">HTML 5 is cool, but it can't be used everywhere</li>
@@ -62,11 +62,44 @@
           <section>
             <h3>HTML 5 Goodies: Drag and Drop File Upload</h3>
           </section>
+        </section>
+        <section>
+          <h2>The Useful: the Appcache</h2>
           <section>
-            <h3>HTML 5 Goodies: The Appcache</h3>
+            <ul>
+              <li class='fragment'>Works for later versions of Chrome, FF, Opera, IE (10), IOS, Android...</li>
+              <li class='fragment'>Speeds up successive page loads; decrease server load by only requesitng what's changed</li>
+              <li class='fragment'>Makes your site available offline</li>
+            </ul>
           </section>
           <section>
-            <h3>HTML 5 Goodies: The Appcache and Local Storage</h3>
+            <h3>How it Works</h3>
+            <ol>
+              <li>Add </li>
+              <li>Add the files you want cached to the manifest</li>
+              <li>Serve the manifest with CONTENT-TYPE:cache-manifest</li>
+            </ol>
+          </section>
+          <section>
+            <h3>The Not-So-Great</h3>
+            <ul>
+              <li><a href="http://dl.dropbox.com/u/2501978/appcache-diagram.svg">Messy!</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Caveats abound</h3>
+            <ul>
+              <li>Typical cache validation woes</li>
+              <li>Once the manifest is downloaded and used, the only way updates are received is if something in the manifest is updated (file versions, comments in the file...)</li>
+            </ul>
+          </section>
+          <section>
+            <h3>More Caveats</h3>
+            <ul>
+              <li>A file in the manifest 4xx/5xx/redirects to another domain?  No Caching.</li>
+              <li>Must prompt user via JS in order to expire stale content<br/>
+              <small>(that's why Google shows "New version of XYZ now available.  Reload?")</small></li>
+            </ul>
           </section>
         </section>
         <section>
