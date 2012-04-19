@@ -58,6 +58,7 @@
                 <small>it's pollyfillable</small>
               </li>
               <li>contenteditable (like with <a href="http://jsbin.com/#html,live">jsbin</a>)</li>
+              <li><a href="http://html5demos.com/geo">Geolocation</a></li>
             </ul>
           </section>
           <section>
@@ -70,21 +71,31 @@
           <h2>The Useful: the Appcache</h2>
           <section>
             <ul>
-              <li class='fragment'>Works for later versions of Chrome, FF, Opera, IE (10), IOS, Android...</li>
               <li class='fragment'>Speeds up successive page loads; decrease server load by only requesitng what's changed</li>
               <li class='fragment'>Makes your site available offline</li>
+              <li class='fragment'>Works for later versions of Chrome, FF, Opera, IE (10), IOS, Android...</li>
             </ul>
           </section>
           <section>
             <h3>How it Works</h3>
             <ol>
-              <li>Add </li>
-              <li>Add the files you want cached to the manifest</li>
-              <li>Serve the manifest with CONTENT-TYPE:cache-manifest</li>
+              <li class='fragment'>Add <pre><code contenteditable>&lt;html manifest="offline.appcache"&gt;</code></pre></li>
+              <li class='fragment'>Add the files you want cached to the manifest
+                <pre><code contenteditable>
+  CACHE MANIFEST
+
+  css/extras.css
+  images/js-conf.jpg
+  favicon-v234.ico
+  http://ajax.googleapis.com/ajax/libraries/pure-awesome/really-awesome-thing.js
+                </code></pre>
+              </li>
+              <li class='fragment'>Serve the manifest with CONTENT-TYPE:cache-manifest</li>
+              <li class='fragment'>TA DA!</li>
             </ol>
           </section>
           <section>
-            <h3>The Not-So-Great</h3>
+            <h3>But wait...not so easy</h3>
             <ul>
               <li><a href="http://dl.dropbox.com/u/2501978/appcache-diagram.svg">Messy!</a></li>
             </ul>
@@ -94,6 +105,7 @@
             <ul>
               <li>Typical cache validation woes</li>
               <li>Once the manifest is downloaded and used, the only way updates are received is if something in the manifest is updated (file versions, comments in the file...)</li>
+              <li>Pages pointing to a manifest are always cached</li>
             </ul>
           </section>
           <section>
@@ -102,7 +114,7 @@
               <li>A file in the manifest 4xx/5xx/redirects to another domain?  No Caching.</li>
               <li>Must prompt user via JS in order to expire stale content<br/>
               <small>(that's why Google shows "New version of XYZ now available.  Reload?")</small></li>
-              <li>Doesn't like stuff that's not appcached<li>
+              <li>Doesn't like stuff that's not appcached</li>
             </ul>
           </section>
         </section>
@@ -124,23 +136,23 @@
             <ul>
               <li><a href="https://github.com/tvalletta/web-bowling/wiki">Web Bowling!</a></li>
               <li>Used Box2D</li>
-              <li>More info!</li>
+              <li>Boot 2 Gecko</li>
             </ul>
           </section>
         </section>
         <section>
           <h2>Things I Wanted to See, But Didn't</h2>
           <br/>
-          <h3>Yes, of course we need a billion more MVC frameworks.</h3>
-          <h3>So tell me more about testing...</h3>
+          <h3>Yes, of course we need a billion more client-side MVC frameworks.</h3>
+          <h3>But tell me more about your testing frameworks...</h3>
           <br/>
           <h4>also, Paul Irish's <a href="http://dl.dropbox.com/u/39519/talks/jsconf-tools/index.html">talk on JS tooling</a>... :(</h4>
         </section>
         <section>
           <h2>Javascript Meetups and Events</h2>
-          <h3>NodeConf</h3>
+          <h3><a href="http://www.nodeconf.com/">NodeConf</a></h3>
           <h4>(July 2nd and 3rd, Portland)</h4>
-          <h3>Javascript Admirers</h3>
+          <h3><a href="http://pdxjs.com/">Javascript Admirers</a></h3>
           <h4>(last Wednesday of every month, 18:30 @ Jive Software) </h4>
         </section>
       </div>
